@@ -40,19 +40,22 @@ h1, h2, h3, h4, h5, h6 {
   width: 40px;
   height: 40px;
   border-radius: 4px;
-  background: #3498db;
+  background: #00a54f;
   color: #fff;
   transition: all 0.4s;
 }
 
 .back-to-top i:hover {
-  background: #4ea5e0;
+  background: #175da2;
   color: #fff;
 }
 
 /*--------------------------------------------------------------
 # topbar
 --------------------------------------------------------------*/
+#topbar{
+  background-color:#00a54f;
+}
 
 .icofont-envelope {
   font-size: 15px;
@@ -85,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 
 #header {
-  background: #fff;
+  background: #effbed;
   transition: all 0.5s;
   z-index: 997;
   padding-top: 25px;
@@ -103,11 +106,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo a {
-  color: #fff;
+  color: #effbed;
 }
 
 #header .logo img {
-  max-height: 56px;
+  max-height: 65px;
   padding: 5px 0px;
 }
 
@@ -145,14 +148,15 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
-#for menu underling on hovering nav-menu>ul>li>a:before {
+#for menu underling on hovering 
+nav-menu>ul>li>a:before {
   content: "";
   position: absolute;
   width: 100%;
   height: 2px;
   bottom: -6px;
   left: 0;
-  background-color: #3498db;
+  background-color: #175da2;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -164,7 +168,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu a:hover, .nav-menu .active>a, .nav-menu li:hover>a {
-  color: #3498db;
+  color: #175da2;
 }
 
 .nav-menu .drop-down ul {
@@ -176,7 +180,8 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0;
   visibility: hidden;
   padding: 10px 0;
-  background: aliceblue;
+  background: #effbed;
+  border-radius: 10px;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   /* opacity: 0.97; */
   /* transition: 0.1s; */
@@ -203,7 +208,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active>a, .nav-menu .drop-down ul li:hover>a {
   color: white;
-  background: #3498db;
+  background: #00a54f;
 }
 
 .nav-menu .drop-down>a:after {
@@ -247,7 +252,16 @@ h1, h2, h3, h4, h5, h6 {
     content: "\ea9d";
   }
 }
-
+ /* Contact Us button */
+/*
+@media (min-width: 768px) {
+.contact-us{
+  background: #00a54f;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  color: white;
+}
+} */
 /* Get Startet Button */
 
 .get-started-btn {
@@ -306,7 +320,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 15px;
   z-index: 9999;
   overflow-y: auto;
-  background: #fff;
+  background: #effbed;
   transition: ease-in-out 0.2s;
   opacity: 0;
   visibility: hidden;
@@ -330,7 +344,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav a:hover, .mobile-nav .active>a, .mobile-nav li:hover>a {
-  color: #3498db;
+  color: #00a54f;
   text-decoration: none;
 }
 
@@ -654,14 +668,23 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-
+.about{
+  background: url("../img/aboutus/about_background.jpeg") center center no-repeat;
+   /* Create the parallax scrolling effect */
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
 .about .content {
-  padding: 30px 0;
+  background-color: #effbed;
+  padding: 30px 40px;
 }
 
 .about .content h3 {
   font-weight: 700;
   font-size: 34px;
+  color: #00a54f;
 }
 
 .about .content p {
@@ -686,7 +709,7 @@ section {
 .about .content .icon-box i{
   font-size: 48px;
   float: left;
-  color: #3498db;
+  color: #00a54f;
 }
 
 .icon-box img{
@@ -696,14 +719,14 @@ section {
 
 .about .content .icon-box p {
   font-size: 14px;
-  color: #848484;
-  /* margin-left: 70px; */
+  color: #000;
+  margin-left: 70px;
 }
 
 .about .image {
-  background: url("../img/about.jpg") center center no-repeat;
+  background: url("../img/about.png") center center no-repeat;
   background-size: cover;
-  min-height: 400px;
+  /* min-height: 400px; */
 }
 
 @media (max-width: 991px) {
@@ -721,55 +744,47 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Counts
---------------------------------------------------------------*/
-
-.counts {
-  padding: 0 0 30px 0;
+/* Our vision Our Mission */
+.about .box {
+  margin-top: 30px;
+  background: white;
+  padding: 50px 30px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all ease-in-out 0.3s;
+  height: 350px;
+  text-align: center;
 }
 
-.counts .count-box {
-  padding: 30px;
-  width: 100%;
-}
-
-.counts .count-box i {
+.about .box span {
   display: block;
-  font-size: 44px;
-  color: #3498db;
-  float: left;
-}
-
-.counts .count-box span {
-  font-size: 48px;
-  line-height: 40px;
-  display: block;
+  font-size: 28px;
   font-weight: 700;
-  color: #2a2a2a;
-  margin-left: 60px;
+  color: #00a54f;
 }
 
-.counts .count-box p {
-  padding: 15px 0 0 0;
-  margin: 0 0 0 60px;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  color: #505050;
-}
-
-.counts .count-box a {
+.about .box h4 {
+  font-size: 24px;
   font-weight: 600;
-  display: block;
-  margin-top: 20px;
-  color: #505050;
-  font-size: 15px;
-  font-family: "Poppins", sans-serif;
-  transition: ease-in-out 0.3s;
+  padding: 0;
+  margin: 20px 0;
+  color: #00a54f;
 }
 
-.counts .count-box a:hover {
-  color: #777777;
+.about .box p {
+  color: #848484;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.about .box:hover {
+  background: #00a54f;
+  padding: 30px 30px 70px 30px;
+  box-shadow: 10px 15px 30px #00a54fb0;
+}
+
+.about .box:hover span, .about .box:hover h4, .about .box:hover p {
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -882,49 +897,6 @@ section {
   line-height: 24px;
   font-size: 14px;
   text-align: justify;
-}
-
-/*--------------------------------------------------------------
-# Why Us
---------------------------------------------------------------*/
-
-.why-us .box {
-  padding: 50px 30px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  transition: all ease-in-out 0.3s;
-  height: 350px;
-}
-
-.why-us .box span {
-  display: block;
-  font-size: 28px;
-  font-weight: 700;
-  color: #3498db;
-}
-
-.why-us .box h4 {
-  font-size: 24px;
-  font-weight: 600;
-  padding: 0;
-  margin: 20px 0;
-  color: #2a2a2a;
-}
-
-.why-us .box p {
-  color: #848484;
-  font-size: 15px;
-  margin: 0;
-  padding: 0;
-}
-
-.why-us .box:hover {
-  background: #3498db;
-  padding: 30px 30px 70px 30px;
-  box-shadow: 10px 15px 30px rgba(52, 152, 219, 0.9);
-}
-
-.why-us .box:hover span, .why-us .box:hover h4, .why-us .box:hover p {
-  color: #fff;
 }
 
 /*--------------------------------------------------------------
