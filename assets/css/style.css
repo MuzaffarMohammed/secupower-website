@@ -1,7 +1,20 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+.carousel_bg_img{
+  background-image: linear-gradient(0deg, rgba(3,2,2,0.1), rgba(3,2,2,0.1)),url("../img/test1.jpg");
 
+  /* Set a specific height */
+  min-height: 100vh; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;}
+  
+  
+  
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -408,30 +421,48 @@ nav-menu>ul>li>a:before {
   height: 65vh;
   /* background-color: rgba(17, 17, 17, 0.1); */
   overflow: hidden;
-  padding-left: 120px;
-  margin:240px 0 0 0; 
-
+  padding-left: 15px;
 }
+
+#welcomeToDiv {margin-top:98px;}
+
+#hero .span1H2 {font-weight: 400; font-size: 25px; color:#fff;}
+
+#hero .rowSpanH2{font-size: 24px;}
+
+#hero .greenColor{color:#00a54f;}
+
+#hero .blueColor{color:#175da2;}
+
+#hero .span2H2{color:#fff;}
+
+#hero .span1H1{color:#175da2; font-weight: 600; font-size:70px;}
+
+#hero .span2H1{color:#00a54f; font-weight: 600; font-size:70px;}
 
 @media (max-width: 768px) {
   #hero {
     height: 100vh;
+	padding-left: 10px;
   }
+  #hero .span1H1{color:#175da2; font-weight: 600; font-size:36px;}
+  #hero .span2H1{color:#00a54f; font-weight: 600; font-size:36px;}
 }
 
 #hero .carousel-item {
-  width: 90%;
+  width: 99%;
   height: 40vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-    background-image: linear-gradient(to right, #286A97, #012D4B 40%);
+    background-image: 
 }
 
 @media (max-width: 768px) {
   #hero .carousel-item {
-    height: 100vh;
+  width: 98%;
+  height: 36vh;
   }
 }
 
@@ -494,7 +525,7 @@ nav-menu>ul>li>a:before {
 #hero .carousel-inner .active, #hero .carousel-inner .carousel-item-next.carousel-item-left, #hero .carousel-inner .carousel-item-prev.carousel-item-right {
   opacity: 1;
   transition: 1.5s;
-  background-image: linear-gradient(to right, #286A97, #012D4B 40%);
+  background-image:
 }
 
 #hero .carousel-inner .carousel-item-next, #hero .carousel-inner .carousel-item-prev, #hero .carousel-inner .active.carousel-item-left, #hero .carousel-inner .active.carousel-item-right {
@@ -900,127 +931,247 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Portfolio
+# Why Us
 --------------------------------------------------------------*/
 
-.portfolio .portfolio-item {
-  margin-bottom: 30px;
+.why-us .box {
+  padding: 50px 30px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all ease-in-out 0.3s;
+  height: 350px;
 }
 
+.why-us .box span {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  color: #3498db;
+}
+
+.why-us .box h4 {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0;
+  margin: 20px 0;
+  color: #2a2a2a;
+}
+
+.why-us .box p {
+  color: #848484;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.why-us .box:hover {
+  background: #3498db;
+  padding: 30px 30px 70px 30px;
+  box-shadow: 10px 15px 30px rgba(52, 152, 219, 0.9);
+}
+
+.why-us .box:hover span, .why-us .box:hover h4, .why-us .box:hover p {
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+.portfolio{background-color:#fff;}
 .portfolio #portfolio-flters {
   padding: 0;
-  margin: 0 auto 20px auto;
+  margin: 0 auto 35px auto;
   list-style: none;
   text-align: center;
+  border-radius: 50px;
+  padding: 2px 15px;
+}
+
+.portfolio h1{
+	color:#00a54f;
 }
 
 .portfolio #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
-  padding: 8px 15px 10px 15px;
+  padding: 10px 20px 12px 20px;
   font-size: 14px;
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #444444;
+  color: #175da2;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
-  border-radius: 3px;
+  border-radius: 50px;
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
   color: #fff;
-  background: #5c9f24;
+  background: #00a54f;
 }
 
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
 }
 
-.portfolio .portfolio-wrap {
-  transition: 0.3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  background: rgba(42, 42, 42, 0.7);
+.portfolio .portfolio-item {
+  margin-bottom: 30px;
 }
 
-.portfolio .portfolio-wrap::before {
-  content: "";
-  background: rgba(42, 42, 42, 0.7);
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  transition: all ease-in-out 0.3s;
-  z-index: 2;
-  opacity: 0;
-}
-
-.portfolio .portfolio-wrap img {
-  transition: all ease-in-out 0.3s;
-}
-
-.portfolio .portfolio-wrap .portfolio-info {
+.portfolio .portfolio-item .portfolio-info {
   opacity: 0;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  left: 30px;
+  right: 30px;
   bottom: 0;
   z-index: 3;
   transition: all ease-in-out 0.3s;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px;
 }
 
-.portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 20px;
+.portfolio .portfolio-item .portfolio-info h4 {
+  font-size: 18px;
   color: #fff;
   font-weight: 600;
+  color: #473d3a;
 }
 
-.portfolio .portfolio-wrap .portfolio-info p {
-  color: rgba(255, 255, 255, 0.7);
+.portfolio .portfolio-item .portfolio-info p {
+  color: #7f6d68;
   font-size: 14px;
-  text-transform: uppercase;
-  padding: 0;
-  margin: 0;
-  font-style: italic;
+  margin-bottom: 0;
 }
 
-.portfolio .portfolio-wrap .portfolio-links {
+.portfolio .portfolio-item .portfolio-info .preview-link, .portfolio .portfolio-item .portfolio-info .details-link {
+  position: absolute;
+  right: 40px;
+  font-size: 24px;
+  top: calc(50% - 18px);
+  color: #635551;
+}
+
+.portfolio .portfolio-item .portfolio-info .preview-link:hover, .portfolio .portfolio-item .portfolio-info .details-link:hover {
+  color: #ff5821;
+}
+
+.portfolio .portfolio-item .portfolio-info .details-link {
+  right: 10px;
+}
+
+.portfolio .portfolio-item .portfolio-links {
+  opacity: 0;
+  left: 0;
+  right: 0;
   text-align: center;
-  z-index: 4;
+  z-index: 3;
+  position: absolute;
+  transition: all ease-in-out 0.3s;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a {
+.portfolio .portfolio-item .portfolio-links a {
   color: #fff;
-  margin: 0 5px 0 0;
+  margin: 0 2px;
   font-size: 28px;
   display: inline-block;
   transition: 0.3s;
 }
 
-.portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #8ed851;
+.portfolio .portfolio-item .portfolio-links a:hover {
+  color: #ffa587;
 }
 
-.portfolio .portfolio-wrap:hover::before {
+.portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
+  bottom: 20px;
 }
 
-.portfolio .portfolio-wrap:hover img {
-  transform: scale(1.2);
+/*--------------------------------------------------------------
+# Portfolio Details
+--------------------------------------------------------------*/
+.portfolio-details {
+  padding-top: 0;
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-info {
-  opacity: 1;
+.portfolio-details .portfolio-details-container {
+  position: relative;
 }
+
+.portfolio-details .portfolio-details-carousel {
+  position: relative;
+  z-index: 1;
+}
+
+.portfolio-details .portfolio-details-carousel .owl-nav, .portfolio-details .portfolio-details-carousel .owl-dots {
+  margin-top: 5px;
+  text-align: left;
+}
+
+.portfolio-details .portfolio-details-carousel .owl-dot {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd !important;
+}
+
+.portfolio-details .portfolio-details-carousel .owl-dot.active {
+  background-color: #ff5821 !important;
+}
+
+.portfolio-details .portfolio-info {
+  padding: 30px;
+  position: absolute;
+  right: 0;
+  bottom: -70px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.portfolio-details .portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.portfolio-details .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.portfolio-details .portfolio-info ul li + li {
+  margin-top: 10px;
+}
+
+.portfolio-details .portfolio-description {
+  padding-top: 50px;
+}
+
+.portfolio-details .portfolio-description h2 {
+  width: 50%;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.portfolio-details .portfolio-description p {
+  padding: 0 0 0 0;
+}
+
+@media (max-width: 768px) {
+  .portfolio-details .portfolio-description h2 {
+    width: 100%;
+  }
+  .portfolio-details .portfolio-info {
+    position: static;
+    margin-top: 30px;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Team
@@ -1718,3 +1869,247 @@ section {
 .appseonit {
   color: #3498db;
 }	
+
+/*--------------------------------------------------------------
+# Govt_Certificates Section
+--------------------------------------------------------------*/
+
+#govt_certificates {
+  width: 100%;
+  height: 100vh;
+  /* background-color: rgba(17, 17, 17, 0.1); */
+  overflow: hidden;
+  padding-left: 0px;
+  margin-top:-27px;
+}
+
+#govt_certificates .vertiCerti{width:330px; height:450px;}
+#govt_certificates .vertiEllipse{width:360px;}
+
+#govt_certificates .horiCerti{width:600px; height:400px;}
+#govt_certificates .horiEllipse{width:560px;}
+
+@media (max-width: 768px) {
+ #govt_certificates .horiCerti{margin-top:50px; width:330px; height:217px;}
+ #govt_certificates .horiEllipse{width:300px;}
+}
+
+@media (max-width: 768px) {
+  #govt_certificates {
+    height: 100vh;
+  }
+}
+
+#govt_certificates .carousel-item {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+    background-color: #effbed ;
+}
+
+@media (max-width: 768px) {
+  #govt_certificates .carousel-item {
+    height: 100vh;
+  }
+}
+
+#govt_certificates .carousel-item::before {
+  content: '';
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#govt_certificates .carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#govt_certificates .carousel-content {
+  text-align: center;
+  height: 100vh;
+}
+
+#govt_certificates h2 {
+  color: #00a54f;
+  margin-top: 10px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+#govt_certificates h4{color:#175da2;}
+
+#govt_certificates h2 span {
+  color: #5c9f24;
+}
+
+#govt_certificates p {
+  text-align: center;
+  width: 80%;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+  margin: 0 auto 30px auto;
+  color: #4f5a62;
+  font-size: x-medium;
+  font-weight: 500;
+}
+
+#govt_certificates .carousel-inner .carousel-item {
+  transition-property: opacity;
+  background-position: center top;
+}
+
+#govt_certificates .carousel-inner .carousel-item, #govt_certificates .carousel-inner .active.carousel-item-left, #govt_certificates .carousel-inner .active.carousel-item-right {
+  opacity: 0;
+}
+
+#govt_certificates .carousel-inner .active, #govt_certificates .carousel-inner .carousel-item-next.carousel-item-left, #govt_certificates .carousel-inner .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+  transition: 1.5s;
+  background-image: ;
+}
+
+#govt_certificates .carousel-inner .carousel-item-next, #govt_certificates .carousel-inner .carousel-item-prev, #govt_certificates .carousel-inner .active.carousel-item-left, #govt_certificates .carousel-inner .active.carousel-item-right {
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+
+#govt_certificates .carousel-control-prev {
+  width: 10%;
+  padding-left: 20px;	  
+  opacity: 1;
+}
+
+#govt_certificates .carousel-control-next{
+    width: 10%;
+	padding-right: 20px;
+    opacity: 1;
+
+}
+
+#govt_certificates .carousel-control-next-icon, #govt_certificates .carousel-control-prev-icon {
+  background: none;
+  font-size: 110px;
+  line-height: 1;
+  width: auto;
+  height: auto;
+  
+  border-radius: 0px;
+  padding: 10px;
+  transition: 0.3s;
+  color: rgba(#175da2 / 78%);
+}
+
+#govt_certificates .carousel-control-next-icon:hover, #govt_certificates .carousel-control-prev-icon:hover {
+  
+  color: rgba(0, 165, 79 / 78%);
+}
+
+#govt_certificates .carousel-indicators li {
+  cursor: pointer;
+  background: #fff;
+  overflow: hidden;
+  border: 0;
+  width: 20px;
+  height: 3px;
+  border-radius: 50px;
+  opacity: .6;
+  transition: 0.3s;
+}
+
+#govt_certificates .carousel-indicators li.active {
+  opacity: 1;
+  background: #3498db;
+}
+
+#govt_certificates .btn-get-started {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px 12px 32px;
+  border-radius: 4px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 10px;
+  color: #fff;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  text-transform: uppercase;
+  border: 2px solid #3498db;
+  background: #3498db;
+}
+
+#govt_certificates .btn-get-started:hover {
+  background: #4ea5e0;
+  border-color: #4ea5e0;
+  color: #fff;
+}
+
+#govt_certificates .firstBanner_leftImg{
+	margin-top:110px; 
+	float:left;
+}
+
+@media (max-width: 768px) {
+  #govt_certificates .firstBanner_leftImg {
+    margin-top:20px; 
+	float:center;
+  }
+}
+
+#govt_certificates .firstBanner_rightImg{
+	margin-top:150px; 
+	float:right;
+}
+
+@media (max-width: 768px) {
+  #govt_certificates .firstBanner_rightImg {
+    margin-top:-10px; 
+	float:center;
+	padding-left:30px;
+  }
+}
+
+#govt_certificates .carouselBottomBanner_DownImg{
+	margin-top:-110px;
+}
+
+@media (max-width: 768px) {
+  #govt_certificates .carouselBottomBanner_DownImg {
+    margin-top:40px; 
+	float:center;
+	height:100%;
+	width:100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #govt_certificates h2 {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #govt_certificates p {
+    text-align: left;
+    width: 500%;
+  }
+  #govt_certificates .carousel-control-prev, #govt_certificates .carousel-control-next {
+    width: 5%;
+  }
+}
+
