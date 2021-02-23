@@ -434,7 +434,11 @@ nav-menu>ul>li>a:before {
   padding-left: 15px;
 }
 
-#welcomeToDiv {margin-top:98px;}
+#welcomeToDiv {margin-left:110px; margin-top:98px;}
+
+@media (max-width: 768px) {
+#welcomeToDiv {margin-left:10px; margin-top:98px;}
+}
 
 #hero .span1H2 {font-weight: 400; font-size: 25px; color:#fff;}
 
@@ -453,7 +457,7 @@ nav-menu>ul>li>a:before {
 @media (max-width: 768px) {
   #hero {
     height: 100vh;
-	padding-left: 10px;
+	padding-left: 7px;
   }
   #hero .span1H1{color:#175da2; font-weight: 600; font-size:36px;}
   #hero .span2H1{color:#00a54f; font-weight: 600; font-size:36px;}
@@ -699,7 +703,7 @@ section {
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #3498db;
+  color: #00a54f;
 }
 
 .section-title p {
@@ -845,7 +849,7 @@ section {
 --------------------------------------------------------------*/
 
 .services {
-  background: aliceblue;
+  background: #effbed;
 }
 
 .services .icon-box {
@@ -869,7 +873,7 @@ section {
   background: #fff;
   border-radius: 50%;
   transition: 0.5s;
-  color: #3498db;
+  color: #00a54f;
   font-size: 40px;
   overflow: hidden;
   padding-top: 20px;
@@ -877,13 +881,13 @@ section {
 }
 
 .services .icon-box:hover .icon i {
-  box-shadow: 0px 0 25px rgba(52, 152, 219, 0.9);
+  box-shadow: 0px 0 25px rgba(23, 93, 162, 0.9);
 }
 
 .services .icon-box:hover {
   height: 320px;
   padding-top: 15px;
-  box-shadow: 0px 0px 20px 0px rgb(52 152 219 / 90%);
+  box-shadow: 0px 0px 20px 0px rgb(23 93 162 / 90%);
   background: white;
 }
 
@@ -901,7 +905,7 @@ section {
 }
 
 .services .title a:hover {
-  color: #3498db;
+  color: #175da2;
 }
 
 .services .title::after {
@@ -910,7 +914,7 @@ section {
   display: block;
   width: 50px;
   height: 2px;
-  background: #3498db;
+  background: #175da2;
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -1720,7 +1724,7 @@ section {
 }
 
 #footer .footer-top {
-  background: #002b48;
+  background: #00a54f;
   border-bottom: 1px solid #2f2f2f;
   padding: 60px 0 30px 0;
 }
@@ -1871,21 +1875,47 @@ section {
   /* background-color: rgba(17, 17, 17, 0.1); */
   overflow: hidden;
   padding-left: 0px;
-  margin-top:-27px;
+  /*margin-top:-27px;*/
 }
 
-#govt_certificates .vertiCerti{width:330px; height:450px;}
+#govt_certificates .vertiCerti{width:330px; height:450px; border: 1px solid #000000;}
 #govt_certificates .vertiEllipse{width:360px;}
 
-#govt_certificates .horiCerti{width:600px; height:400px;}
-#govt_certificates .horiEllipse{width:560px;}
+#govt_certificates .horiCerti{width:600px; height:400px; border: 1px solid #000000;}
+#govt_certificates .horiEllipse{width:580px;}
 
-@media (max-width: 768px) {
+
+@media screen and (max-width: 1080px) and (min-width: 768px) {
+#govt_certificates .vertiCerti{width:530px; height:750px; border: 1px solid #000000;}
+#govt_certificates .vertiEllipse{width:560px;}
+
+#govt_certificates .horiCerti{width:650px; height:500px; border: 1px solid #000000;}
+#govt_certificates .horiEllipse{width:760px;}
+}
+
+
+@media screen and (max-width: 1080px) and (min-width: 1020px) {
+#govt_certificates .vertiCerti{width:810px; height:1050px; border: 1px solid #000000;}
+#govt_certificates .vertiEllipse{width:800px;}
+
+#govt_certificates .horiCerti{width:820px; height:600px; border: 1px solid #000000;}
+#govt_certificates .horiEllipse{width:760px;}
+}
+
+
+
+@media (max-width: 767px) {
  #govt_certificates .horiCerti{margin-top:50px; width:330px; height:217px;}
  #govt_certificates .horiEllipse{width:300px;}
 }
 
 @media (max-width: 768px) {
+  #govt_certificates {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 1080px) {
   #govt_certificates {
     height: 100vh;
   }
@@ -1902,6 +1932,12 @@ section {
 }
 
 @media (max-width: 768px) {
+  #govt_certificates .carousel-item {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 1080px) {
   #govt_certificates .carousel-item {
     height: 100vh;
   }
