@@ -816,7 +816,7 @@ section {
 .clients {
   padding: 15px 0;
   text-align: center;
-  margin-bottom:-28px;
+  margin-bottom:0px;
 }
 
 .clients img {
@@ -878,6 +878,7 @@ section {
 
 .services .icon-box:hover .icon i {
   box-shadow: 0px 0 25px rgba(23, 93, 162, 0.9);
+   color: #175da2;
 }
 
 .services .icon-box:hover {
@@ -918,7 +919,7 @@ section {
 .services .description {
   line-height: 24px;
   font-size: 14px;
-  text-align: justify;
+  text-align: left;
 }
 
 /*--------------------------------------------------------------
@@ -1076,6 +1077,9 @@ section {
   bottom: 20px;
 }
 
+
+
+#more {display: none;}
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
@@ -1435,6 +1439,16 @@ section {
 # Contact
 --------------------------------------------------------------*/
 
+.contactUs{
+	height:50vh;
+  background: url("../img/contactUs.jpg") center center no-repeat;
+   /* Create the parallax scrolling effect */
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
 .contact .contact-info {
   margin-bottom: 20px;
   text-align: center;
@@ -1536,7 +1550,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #175da2;
+  background: #00a54f;
   border: 0;
   padding: 10px 30px 12px 30px;
   color: #fff;
@@ -1545,7 +1559,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #57aae1;
+  background: #175da2;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1644,9 +1658,10 @@ section {
 
 
 .blueColor{color:#175da2;}
+.greenColor{color:#00a54f;}
 
 #footer .footer-top {
-  background: #00a54f;
+  background:  #003319;
   border-bottom: 1px solid #2f2f2f;
   padding: 60px 0 30px 0;
 }
@@ -1769,7 +1784,6 @@ section {
 
 #footer .footer-top .footer-newsletter form input[type="submit"]:hover {
   background: #134d86;
-  color:#00a54f;
 }
 
 #footer .copyright {
