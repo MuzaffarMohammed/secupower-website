@@ -1083,8 +1083,11 @@ section {
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
+#project1{padding-top:35px;}
+
 .portfolio-details {
   padding-top: 30px;
+    /*  padding-bottom: 55px; */
 }
 
 .portfolio-details .portfolio-details-container {
@@ -1440,8 +1443,8 @@ section {
 --------------------------------------------------------------*/
 
 .contactUs{
-	height:50vh;
-  background: url("../img/contactUs.jpg") center center no-repeat;
+   height:60vh;
+   background: linear-gradient(0deg, rgba(3,2,2,0.1), rgba(3,2,2,0.9)), url("../img/contactUs.jpg") center center no-repeat;
    /* Create the parallax scrolling effect */
    background-attachment: fixed;
    background-position: center;

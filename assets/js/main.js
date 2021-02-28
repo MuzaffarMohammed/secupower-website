@@ -192,3 +192,7 @@
   window.location.href = path;
 }
 
+AOS.init({
+  duration: 1200,
+})
+
