@@ -710,7 +710,7 @@ section {
 # About
 --------------------------------------------------------------*/
 .about{
-  background: url("../img/aboutus/about_background.jpeg") center center no-repeat;
+  background: url("../img/aboutus/about_background.ico") center center no-repeat;
    /* Create the parallax scrolling effect */
    background-attachment: fixed;
    background-position: center;
