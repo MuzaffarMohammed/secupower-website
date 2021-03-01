@@ -1,9 +1,9 @@
 <?php
 //Import PHPMailer classes into the global namespace
 //These must be at the top of your script, not inside a function
-use assets/php/PHPMailer;
-use assets/php/SMTP;
-use assets/php/Exception;
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
 
 //Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer(true);
