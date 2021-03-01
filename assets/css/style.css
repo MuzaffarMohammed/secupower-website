@@ -1468,7 +1468,7 @@ section {
 --------------------------------------------------------------*/
 
 .contactUs{
-   height:60vh;
+   min-height:60vh;
    background: linear-gradient(0deg, rgba(3,2,2,0.1), rgba(3,2,2,0.9)), url("../img/contactUs.jpg") center center no-repeat;
    /* Create the parallax scrolling effect */
    background-attachment: fixed;
