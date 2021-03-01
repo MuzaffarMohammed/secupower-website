@@ -1083,11 +1083,11 @@ section {
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
-#project1{padding-top:35px;}
+
 
 .portfolio-details {
-  padding-top: 30px;
-    /*  padding-bottom: 55px; */
+  height:100vh;
+ 
 }
 
 .portfolio-details .portfolio-details-container {
@@ -1163,11 +1163,36 @@ section {
 @media (max-width: 768px) {
   .portfolio-details .portfolio-description h2 {
     width: 100%;
+    font-size: 18px;
+    font-weight: 700;
   }
+  .portfolio-details .portfolio-description p {
+	  font-size:12px;
+  padding: 0 0 0 0;
+}
+  
   .portfolio-details .portfolio-info {
     position: static;
     margin-top: 30px;
+	padding: 20px;
   }
+  .portfolio-details h2{
+    font-size: 18px;
+    font-weight:700;
+  }
+  
+  .portfolio-details .portfolio-info h3 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.portfolio-details .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 12px;
+}
 }
 
 
