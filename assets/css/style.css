@@ -766,6 +766,13 @@ section {
   }
 }
 
+@media (max-width: 768px) {
+  .about .content{
+  margin-top: 0px;
+  
+}
+}
+
 /* Our vision Our Mission */
 .about .box {
   margin-top: 30px;
