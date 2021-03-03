@@ -1184,7 +1184,7 @@ section {
 @media (max-width: 768px) {
   .portfolio-details .portfolio-description h2 {
     width: 100%;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
   }
   .portfolio-details .portfolio-description p {
@@ -1203,7 +1203,7 @@ section {
   }
   
   .portfolio-details .portfolio-info h3 {
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -1212,7 +1212,7 @@ section {
 .portfolio-details .portfolio-info ul {
   list-style: none;
   padding: 0;
-  font-size: 12px;
+  font-size: 13px;
 }
 }
 
