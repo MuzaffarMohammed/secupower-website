@@ -2193,3 +2193,19 @@ section {
 	background-image: linear-gradient(to right, rgba(255,255,255) 30%, rgba(255,0,0,0) 100%);
 	border-radius:30px;
 }
+
+#service_detail_card{
+	margin-top:-20px;
+	padding-left:40px;
+	background-color: rgba(255,255,255);
+	border-radius:35px;
+}
+
+.powerSystem{
+	background: url("../img/ourServicesDetails.jpg") center center no-repeat;
+   /* Create the parallax scrolling effect */
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
