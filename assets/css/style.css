@@ -707,6 +707,8 @@ nav-menu2>ul>li>a:before {
 
 #hero .greenColor{color:#00a54f;}
 
+#hero .orangeColor{color:#ff6d28;}
+
 #hero .blueColor{color:#175da2;}
 
 #hero .span2H2{color:#fff;}
@@ -714,6 +716,8 @@ nav-menu2>ul>li>a:before {
 #hero .span1H1{color:#175da2; font-weight: 600; font-size:70px;}
 
 #hero .span2H1{color:#00a54f; font-weight: 600; font-size:70px;}
+
+#hero .span2H1-1{color:#ff6d28; font-weight: 600; font-size:70px;}
 
 @media (max-width: 768px) {
   #hero {
@@ -2467,4 +2471,89 @@ section {
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
+}
+
+/*--------------------------------------------------------------
+# About Boxes
+--------------------------------------------------------------*/
+.about-boxes {
+  background: url("../img/about-boxes-bg.jpg") center top no-repeat fixed;
+  background-size: cover;
+  padding: 60px 0 30px 0;
+  position: relative;
+}
+
+.about-boxes::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.92);
+  z-index: 9;
+}
+
+.about-boxes .container, .about-boxes .container-fluid {
+  position: relative;
+  z-index: 10;
+}
+
+.about-boxes .card {
+  border-radius: 3px;
+  border: 0;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.about-boxes .card-icon {
+  text-align: center;
+  margin-top: -32px;
+}
+
+.about-boxes .card-icon i {
+  font-size: 32px;
+  color: #fff;
+  width: 64px;
+  height: 64px;
+  padding-top: 12px;
+  text-align: center;
+  background-color: #3498DB;
+  border-radius: 4px;
+  text-align: center;
+  border: 4px solid #fff;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.about-boxes .card-body {
+  padding-top: 12px;
+}
+
+.about-boxes .card-title {
+  font-weight: 700;
+  text-align: center;
+}
+
+.about-boxes .card-title a {
+  color: #15222b;
+}
+
+.about-boxes .card-title a:hover {
+  color: #3498DB;
+}
+
+.about-boxes .card-text {
+  color: #5e5e5e;
+}
+
+.about-boxes .card:hover .card-icon i {
+  background: #fff;
+  color: #3498DB;
+}
+
+@media (max-width: 1024px) {
+  .about-boxes {
+    background-attachment: scroll;
+  }
 }
