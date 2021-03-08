@@ -145,6 +145,11 @@ h1, h2, h3, h4, h5, h6 {
   list-style: none;
 }
 
+#submenu1{margin-left:78px;}
+#submenu2{margin-left:59px;}
+#submenu3{margin-left:45px;}
+
+
 .nav-menu>ul {
   display: flex;
 }
@@ -2442,6 +2447,13 @@ section {
 }
 
 #service_detail_card{
+	margin-top:-20px;
+	padding-left:40px;
+	background-color: rgba(255,255,255);
+	border-radius:25px;
+}
+
+.service_detail_card{
 	margin-top:-20px;
 	padding-left:40px;
 	background-color: rgba(255,255,255);
