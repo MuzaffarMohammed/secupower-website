@@ -726,6 +726,7 @@ nav-menu2>ul>li>a:before {
   }
   #hero .span1H1{color:#175da2; font-weight: 600; font-size:36px;}
   #hero .span2H1{color:#00a54f; font-weight: 600; font-size:36px;}
+  #hero .span2H1-1{color:#ff6d28; font-weight: 600; font-size:36px;}
 }
 
 #hero .carousel-item {
@@ -2556,4 +2557,10 @@ section {
   .about-boxes {
     background-attachment: scroll;
   }
+}
+
+#it_infra img{
+	flex-shrink:0;
+	width:100%;
+	
 }

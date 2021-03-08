@@ -231,3 +231,23 @@ AOS.init({
       }
     }
   });
+  
+  
+    // Products carousel (uses the Owl Carousel library)
+  $(".cont-and-mech-carousel").owlCarousel({
+    autoplay: true,
+    dots: true,
+    loop: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 1
+      },
+      900: {
+        items: 1
+      }
+    }
+  });
+  
