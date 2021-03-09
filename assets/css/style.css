@@ -736,7 +736,6 @@ nav-menu2>ul>li>a:before {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-    background-image: 
 }
 
 @media (max-width: 768px) {
@@ -805,7 +804,6 @@ nav-menu2>ul>li>a:before {
 #hero .carousel-inner .active, #hero .carousel-inner .carousel-item-next.carousel-item-left, #hero .carousel-inner .carousel-item-prev.carousel-item-right {
   opacity: 1;
   transition: 1.5s;
-  background-image:
 }
 
 #hero .carousel-inner .carousel-item-next, #hero .carousel-inner .carousel-item-prev, #hero .carousel-inner .active.carousel-item-left, #hero .carousel-inner .active.carousel-item-right {
@@ -1362,12 +1360,6 @@ section {
 # Portfolio Details
 --------------------------------------------------------------*/
 
-
-.portfolio-details {
-  height:100vh;
- 
-}
-
 .portfolio-details .portfolio-details-container {
   position: relative;
 }
@@ -1397,7 +1389,6 @@ section {
 
 .portfolio-details .portfolio-info {
   padding: 64px;
-  position: ;
   right: 0;
   bottom: -70px;
   background: #fff;
@@ -1416,7 +1407,7 @@ section {
 .portfolio-details .portfolio-info ul {
   list-style: none;
   padding: 0;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .portfolio-details .portfolio-info ul li + li {
@@ -1435,7 +1426,18 @@ section {
 }
 
 .portfolio-details .portfolio-description p {
+  font-size: 12px;
   padding: 0 0 0 0;
+}
+
+.portfolio-details .container h2{
+  font-size: 16px;
+  font-weight:700;
+}
+
+.portfolio-details .portfolio-description h5 {
+  font-size: 14px;
+  font-weight: 700;
 }
 
 @media (max-width: 768px) {
@@ -1444,33 +1446,39 @@ section {
     font-size: 16px;
     font-weight: 700;
   }
+
+  .portfolio-details .portfolio-description h5 {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
   .portfolio-details .portfolio-description p {
-	  font-size:12px;
-  padding: 0 0 0 0;
-}
-  
+	  font-size: 12px;
+    padding: 0 0 0 0;
+  }
+
   .portfolio-details .portfolio-info {
     position: static;
     margin-top: 30px;
-	padding: 20px;
+	  padding: 20px;
   }
-  .portfolio-details h2{
+  .portfolio-details .container h2{
     font-size: 18px;
     font-weight:700;
   }
   
   .portfolio-details .portfolio-info h3 {
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-}
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
 
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 14px;
-}
+  .portfolio-details .portfolio-info ul {
+    list-style: none;
+    padding: 0;
+    font-size: 12px;
+  }
 }
 
 
@@ -2245,7 +2253,6 @@ section {
 #govt_certificates .carousel-inner .active, #govt_certificates .carousel-inner .carousel-item-next.carousel-item-left, #govt_certificates .carousel-inner .carousel-item-prev.carousel-item-right {
   opacity: 1;
   transition: 1.5s;
-  background-image: ;
 }
 
 #govt_certificates .carousel-inner .carousel-item-next, #govt_certificates .carousel-inner .carousel-item-prev, #govt_certificates .carousel-inner .active.carousel-item-left, #govt_certificates .carousel-inner .active.carousel-item-right {
