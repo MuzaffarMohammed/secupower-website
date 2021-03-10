@@ -1083,8 +1083,6 @@ section {
   max-width: 100%;
   opacity: 1;
   transition: 0.3s;
-  padding: 15px 0;
-  padding-right:20px;
 }
 
 #clients img:hover {
