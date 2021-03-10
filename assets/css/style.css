@@ -1351,8 +1351,16 @@ section {
   bottom: 20px;
 }
 
-
-
+.portfolio-container{
+  max-height: 85vh;
+  overflow: hidden auto;
+}
+@media (max-width: 768px) {
+  .portfolio-container{
+    max-height: 65vh;
+    overflow: hidden auto;
+  }
+}
 #more {display: none;}
 /*--------------------------------------------------------------
 # Portfolio Details
