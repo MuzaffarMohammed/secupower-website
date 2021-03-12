@@ -1485,6 +1485,12 @@ section {
     padding: 0;
     font-size: 12px;
   }
+  
+  .portfolio-details  .portfolio-description ul {
+    font-size: 12px;
+    list-style: unset;
+    padding-left:20px;
+  }
 }
 
 
