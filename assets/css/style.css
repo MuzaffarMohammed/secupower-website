@@ -2408,18 +2408,21 @@ section {
    background-size: cover;
 }
 
+.toolsandequip{width:24%; padding:5px;}
 
 @media (max-width: 768px) {
   .civil #civilCard{
-	padding-left:40px;
 	background-image: linear-gradient(to right, rgba(255,255,255) 85%, rgba(255,0,0,0) 100%);
 	border-radius:30px;
 }
 }
 
+@media (max-width: 1024px) {
+   .toolsandequip{display:none;}
+}
+
 .civil #civilCard{
-	padding-left:60px;
-	background-image: linear-gradient(to right, rgba(255,255,255) 30%, rgba(255,0,0,0) 100%);
+	background-image: linear-gradient(to right, rgba(255,255,255) 50%, rgba(255,0,0,0) 100%);
 	border-radius:30px;
 }
 
@@ -2443,7 +2446,7 @@ section {
 
 .mechanical #mechanicalCard{
 	padding-left:60px;
-	background-image: linear-gradient(to right, rgba(255,255,255) 30%, rgba(255,0,0,0) 100%);
+	background-image: linear-gradient(to right, rgba(255,255,255) 50%, rgba(255,0,0,0) 100%);
 	border-radius:30px;
 }
 
@@ -2466,7 +2469,7 @@ section {
 
 .electrical_and_common #electricalCard{
 	padding-left:60px;
-	background-image: linear-gradient(to right, rgba(255,255,255) 30%, rgba(255,0,0,0) 100%);
+	background-image: linear-gradient(to right, rgba(255,255,255) 50%, rgba(255,0,0,0) 100%);
 	border-radius:30px;
 }
 
