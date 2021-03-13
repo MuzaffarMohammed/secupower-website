@@ -962,7 +962,7 @@ section {
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -2601,15 +2601,11 @@ section {
 # Trading
 --------------------------------------------------------------*/
 .carousel_border{border: 3px solid #ff6d28;}
-#it_infra img{
-	flex-shrink:0;
-	width:100%;	
-}
 .pclass{font-size:14px; height:35vh;}
 
 
-.tradingH4{color:#175da2; font-size:20px; font-weight:700;}
-.tradingH5{color:#175da2; font-size:15px; font-weight:700;}
+.tradingH4{color:#175da2; font-size:16px; font-weight:700;}
+.tradingH5{color:#175da2; font-size:14px; font-weight:700;}
 
  #navUl{background-color:#fef1ea;}
  #navUl a:hover{background-color:#ff5200;}
@@ -2621,4 +2617,40 @@ section {
  @media (max-width: 768px) {
   .pclass{font-size:12px; height:32vh;}
   .tradingH5{color:#175da2; font-size:13px; font-weight:700;}
+}
+
+.cardBox{
+  width: 100%; 
+  padding: 30px;
+  margin: 0px;
+  box-shadow: 0px 0px 10px 0px #dee2e6;
+}
+
+@media (max-width: 768px) {
+  .cardBox{
+    padding: 5px;
+  }
+}
+
+/* Global level standards */
+p{
+  font-size: 14px;
+}
+
+ul{
+  font-size: 14px;
+}
+
+h2{
+  font-size: 20px;
+}
+
+h4{
+  color: #175da2;
+  font-size: 18px;
+}
+
+h6{
+  color: #175da2;
+  font-size: 18px;
 }
