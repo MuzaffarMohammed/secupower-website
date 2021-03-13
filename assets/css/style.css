@@ -2438,14 +2438,12 @@ section {
 
 @media (max-width: 768px) {
  .mechanical #mechanicalCard{
-	padding-left:40px;
 	background-image: linear-gradient(to right, rgba(255,255,255) 85%, rgba(255,0,0,0) 100%);
 	border-radius:30px;
 }
 }
 
 .mechanical #mechanicalCard{
-	padding-left:60px;
 	background-image: linear-gradient(to right, rgba(255,255,255) 50%, rgba(255,0,0,0) 100%);
 	border-radius:30px;
 }
@@ -2461,14 +2459,12 @@ section {
 
 @media (max-width: 768px) {
  .electrical_and_common #electricalCard{
-	padding-left:40px;
 	background-image: linear-gradient(to right, rgba(255,255,255) 85%, rgba(255,0,0,0) 100%);
 	border-radius:30px;
 }
 }
 
 .electrical_and_common #electricalCard{
-	padding-left:60px;
 	background-image: linear-gradient(to right, rgba(255,255,255) 50%, rgba(255,0,0,0) 100%);
 	border-radius:30px;
 }
