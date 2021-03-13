@@ -962,7 +962,7 @@ section {
 }
 
 .section-title h2 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -1035,7 +1035,7 @@ section {
   padding: 20px 30px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   transition: all ease-in-out 0.3s;
-  height: 400px;
+  height: 350px;
   text-align: left;
 }
 
@@ -1398,7 +1398,7 @@ section {
   right: 0;
   bottom: -70px;
   background: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px 0px #DEE2E6;
   z-index: 2;
 }
 
@@ -2501,6 +2501,17 @@ section {
   .service_detail_card_communication{padding:20px;}
 }
 
+.service_detail_card_construction{
+	background:	linear-gradient(0deg, rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url("../img/construction.jpg") center center no-repeat;
+	margin-top:-20px;
+	padding:40px;
+	background-color: rgba(255,255,255);
+	border-radius:25px;
+}
+
+@media (max-width: 768px) {
+  .service_detail_card_construction{padding:20px;}
+}
 
 .ourServices_details{
 	/*background:	linear-gradient(0deg, rgba(3,2,2,0.5), rgba(3,2,2,0.5)), url("../img/ourServicesDetails.jpg") center center no-repeat;*/
@@ -2639,6 +2650,12 @@ p{
 
 ul{
   font-size: 14px;
+}
+
+@media (max-width: 768px) {
+ ul{
+  width:95%;
+}
 }
 
 h2{
