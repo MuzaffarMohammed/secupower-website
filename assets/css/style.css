@@ -11,7 +11,21 @@
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;}
+  background-size: cover;
+}
+
+.trading_bg_img{
+  background-image: linear-gradient(0deg, rgba(3,2,2,0.1), rgba(3,2,2,0.1)),url("../img/trading.jpg");
+
+  /* Set a specific height */
+  min-height: 60vh; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
   
   
   
