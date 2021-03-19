@@ -1091,11 +1091,16 @@ section {
 --------------------------------------------------------------*/
 
 .clients {
-  padding: 60px 0;
+ /* padding: 60px 0;*/
+}
+
+.clients .section-title {
+    text-align: center;
+    padding-bottom: 10px;
 }
 
 .clients img {
-  max-width: 100%;
+  max-width: 60%;
   opacity: 1;
   transition: 0.3s;
 }
@@ -1105,17 +1110,17 @@ section {
 }
 
 #clients .owl-nav, #clients .owl-dots {
-  margin-top: 5px;
+  /*margin-top: 5px;*/
   text-align: center;
 }
 
 #clients .owl-dot {
-  display: inline-block;
+ /* display: inline-block;
   margin: 0 5px;
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #ddd;
+  background-color: #ddd; */
 }
 
 #clients .owl-dot.active {
@@ -1125,8 +1130,12 @@ section {
 @media (max-width: 768px) {
   .clients img {
 	padding-right:5px;
-    max-width: 100%;
+    max-width: 70%;
   }
+  
+  .clients .section-title {
+    padding-bottom: 5px;
+}
 }
 
 /*--------------------------------------------------------------
@@ -1253,6 +1262,57 @@ section {
 .why-us .box:hover span, .why-us .box:hover h4, .why-us .box:hover p {
   color: #fff;
 }
+
+/*--------------------------------------------------------------
+# Trading
+--------------------------------------------------------------*/
+
+.trading {
+ /* padding: 60px 0;*/
+}
+
+.trading .section-title {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.trading img {
+  max-width: 100%;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+#trading img:hover {
+  opacity: 1;
+}
+
+#trading .owl-nav, #trading .owl-dots {
+  /*margin-top: 5px;*/
+  text-align: center;
+}
+
+#trading .owl-dot {
+ /* display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd; */
+}
+
+#trading .owl-dot.active {
+  background-color: #18d26e;
+}
+
+@media (max-width: 768px) {
+  .trading img {
+	padding-right:5px;
+    max-width: 100%;
+  }
+}
+
+
+
 
 /*--------------------------------------------------------------
 # Portfolio
@@ -2247,8 +2307,7 @@ section {
 #govt_certificates h2 {
   color: #00a54f;
   margin-top: 10px;
-  font-size: 32px;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 #govt_certificates h4{color:#175da2;}

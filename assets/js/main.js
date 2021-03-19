@@ -203,13 +203,13 @@ AOS.init({
     loop: true,
     responsive: {
       0: {
-        items: 2
+        items: 3
       },
       768: {
-        items: 4
+        items: 6
       },
       900: {
-        items: 6
+        items: 7
       }
     }
   });
