@@ -1092,10 +1092,14 @@ section {
 
 .clients {
  /* padding: 60px 0;*/
+ /* display: flex;*/
+ padding-left:60px;
+
 }
 
 .clients .section-title {
     text-align: center;
+	padding-right:50px;
     padding-bottom: 10px;
 }
 
@@ -1103,6 +1107,7 @@ section {
   max-width: 60%;
   opacity: 1;
   transition: 0.3s;
+  
 }
 
 #clients img:hover {
@@ -1135,6 +1140,10 @@ section {
   
   .clients .section-title {
     padding-bottom: 5px;
+	padding-right:20px;
+}
+.clients {
+ padding-left:35px;
 }
 }
 
