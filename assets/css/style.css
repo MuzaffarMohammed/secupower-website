@@ -1093,7 +1093,7 @@ section {
 .clients {
  /* padding: 60px 0;*/
  /* display: flex;*/
- padding-left:60px;
+ padding-left:50px;
 
 }
 
@@ -1140,7 +1140,7 @@ section {
   
   .clients .section-title {
     padding-bottom: 5px;
-	padding-right:20px;
+	padding-right:25px;
 }
 .clients {
  padding-left:35px;
@@ -2729,7 +2729,9 @@ section {
 /*--------------------------------------------------------------
 # Trading
 --------------------------------------------------------------*/
-.carousel_border{border: 3px solid #ff6d28;}
+.carousel_border{
+	border: 1px solid #ff6d28;
+}
 .pclass{font-size:14px; height:35vh;}
 
 
@@ -2746,6 +2748,7 @@ section {
  @media (max-width: 768px) {
   .pclass{font-size:12px; height:32vh;}
   .tradingH5{color:#175da2; font-size:13px; font-weight:700;}
+  .carousel_border{margin-top:15px;}
 }
 
 .cardBox{
