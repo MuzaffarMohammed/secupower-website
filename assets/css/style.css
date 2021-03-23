@@ -2758,6 +2758,10 @@ font-size: 54px;
 .carousel_border{
 	border: 1px solid #ff6d28;
 }
+
+.green_border{
+	border: 1px solid #00a54f;
+}
 .pclass{font-size:14px; height:35vh;}
 
 
