@@ -1086,6 +1086,32 @@ section {
   color: #fff;
 }
 
+.cert{
+  background: #effbed;
+}
+.cert .section-title h2{
+text-align: center;
+font-size: 54px;
+
+}
+.cert-item{
+  text-align: center;
+}
+.cert-item h2, .cert-item h4{
+  padding-right: 5px;
+}
+
+.cert-item img{
+  /* width:90% !important;
+  height:90% !important; */
+}
+
+@media (max-width: 768px) {
+  .cert .section-title h2{
+    font-size: 28px;
+    } 
+}
+
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
