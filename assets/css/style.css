@@ -1306,6 +1306,7 @@ font-size: 54px;
  /* padding: 60px 0;*/
 }
 
+.trading .card-body{padding-top: 12px;}
 .trading .section-title {
     text-align: center;
     padding-bottom: 10px;
@@ -1344,6 +1345,7 @@ font-size: 54px;
 	padding-right:5px;
     max-width: 100%;
   }
+  .trading .card-body{padding-left: 1px;}
 }
 
 
@@ -2750,6 +2752,9 @@ font-size: 54px;
   .about-boxes {
     background-attachment: scroll;
   }
+  .about-boxes .card-body {
+  padding-left: 1px;
+}
 }
 
 /*--------------------------------------------------------------
