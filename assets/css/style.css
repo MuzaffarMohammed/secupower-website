@@ -2624,13 +2624,13 @@ font-size: 54px;
   .service_detail_card_construction{padding:20px;}
 }
 
-.service_detail_card_instrumentation{
+/*.service_detail_card_instrumentation{
 	background:	linear-gradient(0deg, rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url("../img/instrumentation.jpg") center center no-repeat;
 	margin-top:-20px;
 	padding:40px;
 	background-color: rgba(255,255,255);
 	border-radius:25px;
-}
+}*/
 
 @media (max-width: 768px) {
   .service_detail_card_instrumentation{padding:20px;}
