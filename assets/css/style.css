@@ -2779,12 +2779,9 @@ font-size: 54px;
 
 .tradingH4{color:#175da2; font-size:16px; font-weight:700;}
 .tradingH5{color:#175da2; font-size:14px; font-weight:700;}
-
- #navUl{background-color:#fef1ea;}
- #navUl a:hover{background-color:#ff5200;}
  
  #navUl2{background-color:#fef1ea;}
- #navUl2 a:hover{background-color:#ff5200;color:#175da2;}
+ #navUl2 a:hover{color:#175da2;}
  
  @media (max-width: 768px) {
   .pclass{font-size:12px; height:32vh;}
