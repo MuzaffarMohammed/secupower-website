@@ -2782,10 +2782,9 @@ font-size: 54px;
 
  #navUl{background-color:#fef1ea;}
  #navUl a:hover{background-color:#ff5200;}
- #navUl1{background-color:#fef1ea;}
- #navUl1 a:hover{background-color:#ff5200;}
+ 
  #navUl2{background-color:#fef1ea;}
- #navUl2 a:hover{background-color:#ff5200;}
+ #navUl2 a:hover{background-color:#ff5200;color:#175da2;}
  
  @media (max-width: 768px) {
   .pclass{font-size:12px; height:32vh;}
