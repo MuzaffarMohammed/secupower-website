@@ -1,8 +1,8 @@
 /**
-* Template Name: Appseonit - v2.2.0
-* Template URL: https://bootstrapmade.com/groovin-free-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
+* Version: Appseonit - v1.0.0
+* URL: https://www.secupower-sa.com
+* Author: www.appseonit.com
+* License: https://www.appseonit.com
 */
 !(function($) {
   "use strict";

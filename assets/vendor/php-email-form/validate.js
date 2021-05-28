@@ -1,7 +1,8 @@
-/**
-* PHP Email Form Validation - v2.3
-* URL: https://bootstrapmade.com/php-email-form/
-* Author: BootstrapMade.com
+/*
+* Version: Appseonit - v1.0.0
+* URL: https://www.secupower-sa.com
+* Author: www.appseonit.com
+* License: https://www.appseonit.com
 */
 !(function($) {
   "use strict";
