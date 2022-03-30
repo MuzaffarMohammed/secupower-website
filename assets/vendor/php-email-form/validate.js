@@ -124,7 +124,7 @@
   function mail(this_form, action, data) {
     $.ajax({
       type: "POST",
-      url: "https://appseonit-mail.herokuapp.com/send",
+      url: "https://appseonit-mail-server.herokuapp.com/send",
       data: data,
       timeout: 40000
     }).done( function(msg){
