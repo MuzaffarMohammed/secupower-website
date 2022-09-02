@@ -111,7 +111,7 @@
     this_form.find('.loading').slideDown();
 
   var data = {
-    "clientId": "2",
+    "clientId": "3",
     "name": this_form.find('.form-control')[0].value,
     "contactNo":this_form.find('.form-control')[1].value,
     "email":this_form.find('.form-control')[2].value,
@@ -124,7 +124,7 @@
   function mail(this_form, action, data) {
     $.ajax({
       type: "POST",
-      url: "https://appseonit-mail.herokuapp.com/send",
+      url: "https://appseonit-mail-server.herokuapp.com/send",
       data: data,
       timeout: 40000
     }).done( function(msg){
